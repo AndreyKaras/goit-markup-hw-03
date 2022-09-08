@@ -1,0 +1,239 @@
+:root {
+    /* Политра цветов */
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --background-portfolio: #F5F5F5;
+    --white-color-next: #EEEEEE;
+    --also-white: #F5F4FA;
+    --black-color: #000000;
+    --background-footer-header: #2F303A;
+    --line-header-line: #ECECEC;
+}
+
+/* общие */
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}   
+
+.link-example {
+    color: var(--primary-text-color)
+}
+
+body {
+    background: var(--white-color);
+    color: var(--primary-text-color);
+   
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* logo  */
+.logo {
+    color: var(--white-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-color {
+    color: var(--accent-color);
+}
+
+.logo-header {
+    color: var(--title-text-color);
+}
+
+/* button */
+.button {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: var(--white-color);
+    color: var(--title-text-color);
+    cursor: pointer;
+
+    font-family: inherit; 
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.button-primary:hover, 
+.button-primary:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* header */
+.header {  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.header .current {
+    color: var(--accent-color)
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    color: var(--title-text-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--accent-color);
+}
+
+.address-link {
+    color: var(--primary-text-color);
+}
+
+/* main-studio */
+
+/* hero-section */
+.hero {
+    background-color: var(--background-footer-header);
+    
+    text-align: center;
+    height: 600px;
+    width: 1600px;
+    left: 0px;
+    top: 80px;
+}
+
+.hero .hero-title {
+
+    font-family: Roboto, sans-serif;
+    color: var(--white-color);
+   
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+    position: absolute;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero .button-studio {
+    font-family: inherit;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+
+}
+
+/* features */
+.features-list .title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features-text {
+font-size: 14px;
+line-height: 1.71;
+}
+
+/*  what_we_do section */
+.section .title-section {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/* team section */
+
+.section-team {
+    background-color: var(--also-white);
+}
+
+.cards-list .title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+
+/* main portfolio */
+
+/* porfolio section*/
+.portfolio-list .card-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.porfolio-list .cards-text {
+    font-size: 16px;
+    line-height: 1.87;
+}
+
+/* footer */
+.footer {
+    background-color: var(--background-footer-header);
+}
+
+.adress {
+    font-style: normal;
+    font-family: Robota, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address-list .link:hover,
+.address-list .link:focus {
+    color: var(--accent-color);
+}
+
+.adress-list {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer .address-map {
+    color: var(--white-color);
+}
+
+.address-contact {
+    color: rgba(255, 255, 255, 0.6);
+}
