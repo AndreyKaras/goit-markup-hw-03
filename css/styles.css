@@ -15,6 +15,8 @@
 /* общие */
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
@@ -48,6 +50,7 @@ body {
 
 .logo-header {
     color: var(--title-text-color);
+    margin-right: 93px;
 }
 
 /* button */
@@ -55,10 +58,23 @@ body {
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    min-width: 216px;
+    text-align: center;
+
+    /* ПОХОДУ НАЙДО УКАЗАТЬ СТРОЧНО-БЛОЧНІЙ ЕЛЕМЕНТ, ДИВОМ ОБЕРНУТЬ СТРОЧНУЮ КНОПКУ? */
 }
 
 .button-primary {
-    background-color: var(--white-color);
+    background-color: var(--also-white);
     color: var(--title-text-color);
     cursor: pointer;
 
@@ -67,11 +83,51 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    border-radius: 4px;
+    padding: 6px 22px;
+    border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    margin-left: 8px;
+    display: block;
 }
+
+.first-primary-button {
+    margin-left: 0px;
+}
+
+/* .filters-button:nth-child(3) {
+    min-width: 73px;
+    color: tomato;
+}
+.button-primary:nth-child(2) {
+    min-width: 125px;
+    color: teal;
+}
+.button-primary:nth-child(3) {
+    width: 112px;
+    color: tomato;
+}
+.button-primary:nth-child(4) {
+    min-width: 103px;
+}
+.button-primary:nth-child(5) {
+    min-width: 130px;
+} */
+
 .button-primary:hover, 
 .button-primary:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
+}
+
+/* Web-Studio */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 /* header */
@@ -80,6 +136,28 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    border-bottom: 1px solid #FFFFFF;
+}
+ 
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.main-header {
+    display: flex; 
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list .item {
+    margin-right: 50px;
+}
+
+.header-list .item:last-child {
+    margin-right: 0px;
 }
 
 .header .current {
@@ -93,6 +171,24 @@ body {
 
 .nav-link {
     color: var(--title-text-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contact li+li {
+    margin-left: 50px;
+}
+
+.address-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .address-link:hover,
@@ -106,15 +202,23 @@ body {
 
 /* main-studio */
 
+
+.section .nomargin {
+    margin-top: 0px;
+}
+
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px; 
+}
+
 /* hero-section */
 .hero {
     background-color: var(--background-footer-header);
-    
-    text-align: center;
     height: 600px;
-    width: 1600px;
-    left: 0px;
-    top: 80px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero .hero-title {
@@ -125,27 +229,17 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-    position: absolute;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
+    margin-top: 0;
 }
 
 .hero .button-studio {
-    font-family: inherit;
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    position: absolute;
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;
+    
 
 }
 
@@ -161,21 +255,85 @@ body {
 .features-text {
 font-size: 14px;
 line-height: 1.71;
+margin: 0;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+.features-list {
+    display: flex;
+}
+
+.features-list li {
+    min-width: 270px;
+}
+
+.features-list li+li {
+    margin-left:30px;
 }
 
 /*  what_we_do section */
+
+.nopadding {
+    padding-top: 0px;
+}
+
 .section .title-section {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.example-section {
+    display: flex;
+}
+.example-section li+li {
+    margin-left: 30px;
+}
+
+.example-section img {
+    display: block;
 }
 
 /* team section */
 
 .section-team {
     background-color: var(--also-white);
+    text-align: center;
+}
+
+.cards-list {
+display: flex;
+}
+
+.cards-list img {
+    display: block;
+}
+
+.cards-list-item li+li {
+    margin-left:30px;    
+}
+
+.cards-team-one {
+    padding: 30px 0px 30px 0px;
+}
+.cards-team-two {
+    padding: 30px 0px 30px 0px;
+}
+.cards-team-three {
+    padding: 30px 0px 30px 0px;
+}
+.cards-team-four {
+    padding: 30px 0px 30px 0px;
 }
 
 .cards-list .title {
@@ -183,33 +341,86 @@ line-height: 1.71;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 10px;
 }
 
 .card-text {
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
+    padding:0;
+    margin:0;
 }
 
 
 /* main portfolio */
 
 /* porfolio section*/
+
+/* .filters {
+} */
+
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-list img {
+    display: block;
+}
+
 .portfolio-list .card-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 0px;
 }
 
-.porfolio-list .cards-text {
+.portfolio-card {
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio-card:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.portfolio-card:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.card-title {
+    margin-bottom: 4px;
+}
+
+.portfolio-card .card-text {
     font-size: 16px;
     line-height: 1.87;
+    text-align: left;
 }
+
+.portfolio-card .cards {
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
 
 /* footer */
 .footer {
     background-color: var(--background-footer-header);
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .adress {
@@ -218,6 +429,14 @@ line-height: 1.71;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+
+    padding-top: 20px;
+
+    
+}
+
+.adress li+li {
+margin-top: 9px;
 }
 
 .address-list .link:hover,
@@ -225,10 +444,10 @@ line-height: 1.71;
     color: var(--accent-color);
 }
 
-.adress-list {
+/* .adress-list {
     font-size: 14px;
     line-height: 1.7;
-}
+} */
 
 .footer .address-map {
     color: var(--white-color);
@@ -237,3 +456,27 @@ line-height: 1.71;
 .address-contact {
     color: rgba(255, 255, 255, 0.6);
 }
+
+
+
+
+/* 
+- досмотреть репету
+
+сделать мейн для студии: 
+- cетка 
+- изображение = flex:start
+- СМЕНИТЬ 3-ю КАРТИНКУ В ПОРТФОЛИО, ПЛОХО ЧКАЧАНА И СЖАТА.
+
+по тз: 
+B16 
+B17 
+
+ментор: 
+- Не забувайте задавати елементам списків у секціях ширину.
+- І ще один момент: логічні заголовки приховуємо за допомогою цього класу - https://gist.github.com/luxplanjay/6f6936b1bba7afe006fa9317b07b6045 Властивість display: none або атрибут hidden для цих цілей НЕ підходить.
+
+
+-СКИНУТЬ ДЗ ДО ПОНЕДЕЛЬНИКА 
+
+*/
