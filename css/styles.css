@@ -35,6 +35,20 @@ body {
     letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* logo  */
 .logo {
     color: var(--white-color);
@@ -97,15 +111,12 @@ body {
 
 /* .filters-button:nth-child(3) {
     min-width: 73px;
-    color: tomato;
 }
 .button-primary:nth-child(2) {
     min-width: 125px;
-    color: teal;
 }
 .button-primary:nth-child(3) {
     width: 112px;
-    color: tomato;
 }
 .button-primary:nth-child(4) {
     min-width: 103px;
@@ -201,7 +212,6 @@ body {
 }
 
 /* main-studio */
-
 
 .section .nomargin {
     margin-top: 0px;
@@ -355,11 +365,6 @@ display: flex;
 
 /* main portfolio */
 
-/* porfolio section*/
-
-/* .filters {
-} */
-
 .portfolio-filters {
     display: flex;
     justify-content: center;
@@ -444,11 +449,6 @@ margin-top: 9px;
     color: var(--accent-color);
 }
 
-/* .adress-list {
-    font-size: 14px;
-    line-height: 1.7;
-} */
-
 .footer .address-map {
     color: var(--white-color);
 }
@@ -457,26 +457,3 @@ margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-
-/* 
-- досмотреть репету
-
-сделать мейн для студии: 
-- cетка 
-- изображение = flex:start
-- СМЕНИТЬ 3-ю КАРТИНКУ В ПОРТФОЛИО, ПЛОХО ЧКАЧАНА И СЖАТА.
-
-по тз: 
-B16 
-B17 
-
-ментор: 
-- Не забувайте задавати елементам списків у секціях ширину.
-- І ще один момент: логічні заголовки приховуємо за допомогою цього класу - https://gist.github.com/luxplanjay/6f6936b1bba7afe006fa9317b07b6045 Властивість display: none або атрибут hidden для цих цілей НЕ підходить.
-
-
--СКИНУТЬ ДЗ ДО ПОНЕДЕЛЬНИКА 
-
-*/
