@@ -35,6 +35,14 @@ body {
     letter-spacing: 0.03em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -100,7 +108,6 @@ body {
     border-radius: 4px;
     padding: 6px 22px;
     border: none;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     margin-left: 8px;
     display: block;
 }
@@ -147,7 +154,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
 }
  
 .header-nav {
@@ -246,6 +253,7 @@ body {
     margin-right: auto;
     max-width: 696px;
     margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .hero .button-studio {
@@ -333,18 +341,11 @@ display: flex;
     margin-left:30px;    
 }
 
-.cards-team-one {
+.cards-team {
     padding: 30px 0px 30px 0px;
+    background-color: #FFFFFF;
 }
-.cards-team-two {
-    padding: 30px 0px 30px 0px;
-}
-.cards-team-three {
-    padding: 30px 0px 30px 0px;
-}
-.cards-team-four {
-    padding: 30px 0px 30px 0px;
-}
+
 
 .cards-list .title {
     color: var(--title-text-color);
@@ -368,7 +369,7 @@ display: flex;
 .portfolio-filters {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 
@@ -435,9 +436,7 @@ display: flex;
     font-size: 14px;
     line-height: 1.71;
 
-    padding-top: 20px;
-
-    
+    margin-top: 20px;
 }
 
 .adress li+li {
